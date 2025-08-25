@@ -42,6 +42,15 @@ ssh -T git@github.com
 
 $ git remote add origin git@github.com:morteza-rostami-cs/rpgGame01.git
 
+# change the ssh key used for the new github:
+
+nano ~/.ssh/config
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_new   # <--- your new key
+  IdentitiesOnly yes
 
 
 -->
