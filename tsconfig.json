@@ -1,13 +1,12 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    "target": "ES2020",
+    // "target": "ES2020",
     // "module": "CommonJS",
-    "rootDir": "src",
-    "outDir": "dist",
+
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+
     "skipLibCheck": true,
     // File Layout
     // "rootDir": "./src",
@@ -15,9 +14,8 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
     // "target": "esnext",
-    "types": [],
+    "types": ["node", "jest"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -46,7 +44,24 @@
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
     // "skipLibCheck": true,
-  }
+    "rootDir": "src",
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es2020"
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["src/**/*", "src"],
+  "exclude": ["node_modules", "dist"]
 }

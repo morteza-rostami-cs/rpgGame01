@@ -19,7 +19,7 @@ class Stats {
 
     // check if values are not negative
     if (health < 0 || maxHealth < 0 || attack < 0 || defense < 0 || speed < 0) {
-      throw new Error("Stats cannot be negative!");
+      throw new Error("stats can not be negative");
     }
 
     // health has to be less than or equal to maxHealth

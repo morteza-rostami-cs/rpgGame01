@@ -52,5 +52,14 @@ Host github.com
   IdentityFile ~/.ssh/id_ed25519_new   # <--- your new key
   IdentitiesOnly yes
 
+Nomad@DESKTOP-IIQIOL4 MINGW64 /d/workspace/NODE/node01 (main)
+$ git add .
 
+Nomad@DESKTOP-IIQIOL4 MINGW64 /d/workspace/NODE/node01 (main)
+$ git commit -m "init 2"
+[main 65932d8] init 2
+ 1 file changed, 9 insertions(+)
+
+Nomad@DESKTOP-IIQIOL4 MINGW64 /d/workspace/NODE/node01 (main)
+$ git push -u origin main
 -->

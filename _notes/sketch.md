@@ -34,9 +34,9 @@
 
 3. Stats System
 
-Define stats (HP, Attack, Defense, Speed, Mana, etc.)
+  Define stats (HP, Attack, Defense, Speed, Mana, etc.) [ *]
 
-Keep extensible for buffs/debuffs later
+  Keep extensible for buffs/debuffs later [* ]
 
 4. Inventory & Items
 
